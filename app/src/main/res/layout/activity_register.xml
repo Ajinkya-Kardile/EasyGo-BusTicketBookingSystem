@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBkColor"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="@string/todo" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="EasyGo"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/whiteCardColor"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="20dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Register"
+                            android:textAlignment="center"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/options_background"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/RegName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/primaryTextColor"
+                                    android:gravity="center_vertical"
+                                    android:hint="Enter Your Name"
+                                    android:inputType="textPersonName"
+                                    android:padding="12dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/view1"
+                                android:layout_marginStart="20dp"
+                                android:background="@color/white"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Name"
+                                android:textColor="@color/primaryTextColor"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/options_background"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/RegPhoneNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/primaryTextColor"
+                                    android:gravity="center_vertical"
+                                    android:hint="Enter Phone No"
+                                    android:inputType="phone"
+                                    android:padding="12dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_marginStart="20dp"
+                                android:background="@color/white"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Phone No"
+                                android:textColor="@color/primaryTextColor"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/options_background"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/RegEmailID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/primaryTextColor"
+                                    android:gravity="center_vertical"
+                                    android:hint="Enter Email Address"
+                                    android:inputType="textEmailAddress"
+                                    android:padding="12dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view3"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/view3"
+                                android:layout_marginStart="20dp"
+                                android:background="@color/white"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Email"
+                                android:textColor="@color/primaryTextColor"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/options_background"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/RegPasswd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/primaryTextColor"
+                                    android:gravity="center_vertical"
+                                    android:hint="Enter Password"
+                                    android:inputType="textPassword"
+                                    android:padding="12dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view4"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/view4"
+                                android:layout_marginStart="20dp"
+                                android:background="@color/white"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Password"
+                                android:textColor="@color/primaryTextColor"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/options_background"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/RegConformPasswd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/primaryTextColor"
+                                    android:gravity="center_vertical"
+                                    android:hint="Re-enter Password"
+                                    android:inputType="textPassword"
+                                    android:padding="12dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view5"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/view5"
+                                android:layout_marginStart="20dp"
+                                android:background="@color/white"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Conform Password"
+                                android:textColor="@color/primaryTextColor"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/RegButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/login_button_bk"
+                            android:text="Register"
+                            android:paddingHorizontal="20dp"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/RedirectLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Already have an account? Log In"
+                            android:textAlignment="center"
+                            android:clickable="true"
+                            android:textColor="@color/primaryTextColor"
+                            android:textStyle="bold"
+                            android:focusable="true" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

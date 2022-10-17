@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/searchBus"
+            android:icon="@drawable/ic_home"
+            android:title="Search Bus" />
+        <item
+            android:id="@+id/MyTickets"
+            android:icon="@drawable/ic_dashboard"
+            android:title="My Tickets" />
+
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"/>
+
+    </group>
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "694027687858",
+    "firebase_url": "https://easygo-e1ac6-default-rtdb.firebaseio.com",
+    "project_id": "easygo-e1ac6",
+    "storage_bucket": "easygo-e1ac6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694027687858:android:68a25a25c0a5ad4974f6ab",
+        "android_client_info": {
+          "package_name": "com.ajinkya.easygo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694027687858-ps33enkj5jao8oglhg92ncthfkp2ehlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWj9uQx_Jwx3sYF_ui7aAl2L0-yU2ftF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694027687858-ps33enkj5jao8oglhg92ncthfkp2ehlt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
