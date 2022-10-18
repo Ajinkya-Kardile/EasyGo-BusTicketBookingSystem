@@ -63,7 +63,7 @@ public class TicketBooking extends AppCompatActivity implements PaymentStatusLis
 
     private String TransactionDetails;
 
-    private final String UPI = "8308679079202@paytm";
+    private final String UPI = "test@UPI";
     private EasyUpiPayment easyUpiPayment;
 
 
@@ -158,13 +158,12 @@ public class TicketBooking extends AppCompatActivity implements PaymentStatusLis
         EasyUpiPayment.Builder builder = new EasyUpiPayment.Builder(this)
                 .with(paymentApp)
                 .setPayeeVpa(UPI)
-//                .setPayeeMerchantCode("ZzJyZQ32070723294346")
                 .setPayeeMerchantCode("5734")
                 .setPayeeName("EasyGO")
                 .setTransactionId(transactionId)
                 .setTransactionRefId(transactionId)
                 .setDescription("Ticket Payment")
-                .setAmount("50.00");
+                .setAmount(str_total_price);
         // END INITIALIZATION
         try {
             // Build instance
